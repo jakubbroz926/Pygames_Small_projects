@@ -24,7 +24,10 @@ adjusting his colors and brightness !!!\n""")
             print("Your picture was picked and is prepared for changes.")
             break
     return image
+
+
 def choices(img):
+    pass
 
 
 def main():
