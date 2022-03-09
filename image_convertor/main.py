@@ -26,8 +26,38 @@ adjusting his colors and brightness !!!\n""")
     return image
 
 
+def color(img):
+
+    return img
+
+
+def bright(img):
+    way, percentage = input("If you want light up image type 0,"
+                "to darken image type 1 and type how much the picture shloud be lighted or darken it."
+                ).split(" ")
+
+    return img
+
+
 def choices(img):
-    pass
+    while True:
+        choice = input("""You have these choices:
+        Type number:
+        1 for color change
+        2 for brightness change
+        3 for both
+        0 for ending the edit.
+        """)
+        if choice == 1:
+            img = color(img)
+        elif choice == 2:
+            img = bright(img)
+        elif choice == 3:
+            img = bright(color(img))
+        elif choice == 0:
+            break
+        else:
+            print("You didn't select any change, so your picture stayed the same.")
 
 
 def main():
